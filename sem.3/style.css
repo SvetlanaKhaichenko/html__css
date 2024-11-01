@@ -89,6 +89,7 @@ padding-bottom: 99px;
     line-height: 160%;
     letter-spacing: 0%;
     text-align: left;
+    opacity: 0.7;
 }
 
 .top_buttons {
@@ -163,6 +164,44 @@ padding-bottom: 99px;
     grid-row: span 2;
     gap: 60px;
 }
+.content_2 {
+    margin-bottom: 221px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px
+    
+}
+.content_text {
+    max-width: 548px;
+}
+.title__content_text {
+    padding-top: 14px;
+    padding-bottom: 40px;
+    color: rgb(255, 255, 255);
+    
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.subtext {
+    max-width: 460px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.7;
+}
+.last {
+    padding-bottom: 14px;
+}
+
+
 
 @media (max-width: 1024px){
     .center {
@@ -197,4 +236,102 @@ padding-bottom: 99px;
         .blog_big img {
             width: 98px;
         }
+        .content_2 {
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 64px;
+        }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .header {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .header_link {
+    
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19px;
+        
+    }
+    .top {
+        padding-bottom: 0;
+    }
+    .top_content {
+
+        margin-top: 64px;
+        margin-bottom: 128px
+    }
+    .subtitle {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .title {
+        text-align: center;
+        font-size: 28px;
+    }
+    .top_info {
+        width: 100%;
+        text-align: center;
+    }
+    .text {
+       
+        width: 100%; 
+        text-align: center;
+        margin-top: 64px;
+    }
+    .top_buttons {
+        
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 39px;
+    }
+    .top_logo {
+
+        padding-bottom: 116px;
+    }
+    .blog {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .top__logo {
+        margin-right: auto;
+        margin-left: 24px;
+    }
+
+    .title__content_text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    .subtext {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 160%;
+        letter-spacing: 0%;
+        text-align: center;
+        padding-bottom: 16px;
+            opacity: 0.7;
+    }
+    .last {
+        padding-bottom: 0;
+    }
+    .content_2 {
+        gap: 32px;
+        margin-bottom: 96px;
+    }
 }
