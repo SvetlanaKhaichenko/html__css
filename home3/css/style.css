@@ -19,8 +19,11 @@ body {
 .header {
     
     background: rgb(34, 34, 34);
-    display: grid;
-    grid-template-columns: 1fr 870px 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .left__menu {
     display: flex;
@@ -243,4 +246,43 @@ body {
     text-align: left;
     background: rgb(255, 255, 255);
     padding: 15px 39px;
+}
+
+@media (max-width: 1024px){
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+    .navigation {
+        padding-top: 19px;
+    }
+    .title_top {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .top img {
+        max-width: 370px;
+    }
+    .text__top {
+        
+       
+        flex-wrap: nowrap;
+    }
+    .people {
+        grid-template-columns: repeat(3, 232px);
+        gap: 20px;
+    }
+    .accesories {
+        max-width: 735px;
+    }
+    .content {
+        margin-top: 109px;
+    }
+    .catalog {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+    .text-catalog {
+        margin-bottom: 40px;
+    }
 }
