@@ -110,6 +110,8 @@ body {
     max-width: 1140px;
 }
 
+
+
 .text-conteiner {
             position: absolute;
             color: rgb(255, 255, 255);
@@ -284,5 +286,105 @@ body {
     }
     .text-catalog {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        padding-left: 8px;
+        padding-right: 8px;
+
+        /* padding-left: calc(50% - 144px);
+        padding-right: calc(50% - 144px); */
+    }
+    .header {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .categories {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+   
+    .top {
+        margin-bottom: 64px;
+        display: block;
+        padding-left: calc(50% - 144px);
+        padding-right: calc(50% - 144px);
+    }
+    .top_men{
+        visibility: hidden;
+        display: none;
+    }
+    .top img {
+        max-height: 66px;
+        max-width: 12px;
+    }
+    .nav1 {
+        visibility: hidden;
+        display: none;
+    }
+    .text__top {
+        padding-top: 148px;
+        padding-bottom: 148px;
+    }
+    .title_top {
+        font-size: 20px;
+        font-weight: 700;
+        max-width: 236px;
+    }
+    .black-weight {
+        font-weight: 900;
+        font-size: 38px;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 32px;
+    }
+    .card {
+        max-width: 343px;
+    }
+   
+    .accesories {
+        overflow: hidden;
+        max-width: 343px;
+        height: 111px;
+    }
+    .accesories img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 343px;
+        height: 111px;
+        object-fit: cover;
+    }
+
+    .content {
+        margin-top: 64px;
+    }
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+    .title__item {
+        margin-top: 25px;
+        margin-bottom: 12px;
+    }
+    
+    .buttons {
+        margin-top: 8px;
+        margin-bottom: 85px;
+    }
+    .item {
+        align-items: stretch;
     }
 }
